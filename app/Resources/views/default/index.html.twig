@@ -385,22 +385,29 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css"/>
-    <link rel="stylesheet" href="assets/vendor/uikit/css/components/sticky.min.css"/>
-    <link rel="stylesheet" href="assets/vendor/uikit/css/components/slider.min.css"/>
-    <link rel="stylesheet" href="assets/vendor/uikit/css/components/slidenav.min.css"/>
-    <link rel="stylesheet" href="assets/css/index.css"/>
+    {% stylesheets
+    'assets/vendor/uikit/css/uikit.min.css'
+    'assets/vendor/uikit/css/components/sticky.min.css'
+    'assets/vendor/uikit/css/components/slider.min.css'
+    'assets/vendor/uikit/css/components/slidenav.min.css'
+    'assets/css/index.css'
+    filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
 {% endblock %}
-
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/uikit/js/uikit.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/uikit/js/components/sticky.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/uikit/js/components/parallax.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/uikit/js/components/slider.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/vide/dist/jquery.vide.min.js"></script>
+    {% javascripts
+    'assets/vendor/jquery/dist/jquery.min.js'
+    'assets/vendor/uikit/js/uikit.min.js'
+    'assets/vendor/uikit/js/components/sticky.min.js'
+    'assets/vendor/uikit/js/components/parallax.min.js'
+    'assets/vendor/uikit/js/components/slider.min.js'
+    'assets/vendor/vide/dist/jquery.vide.min.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
     <script type="text/javascript">
         $(function () {
             $('#vide-toggle').click(function () {
