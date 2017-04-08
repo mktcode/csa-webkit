@@ -1,0 +1,10 @@
+{
+  "name": "freelancer",
+  "authors": [
+    "mktcode <kontakt@markus-kottlaender.de>"
+  ],
+  "dependencies": {
+    "uikit": "^2.27.2",
+    "vide": "^0.5.1"
+  }
+}
