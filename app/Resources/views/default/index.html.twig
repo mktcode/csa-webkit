@@ -3,7 +3,7 @@
 {% block body %}
     <nav id="navbar" class="uk-navbar" data-uk-sticky>
         <ul class="uk-navbar-nav">
-            <li class="home">
+            <li class="uk-active home">
                 <a href="//hofpente.local">
                     Hof Pente
                 </a>
@@ -30,17 +30,17 @@
             </li>
         </ul>
         <ul class="uk-navbar-nav uk-navbar-flip">
-            <li>
-                <a href="">
+            <li class="youtube">
+                <a href="" data-uk-tooltip title="YouTube">
                     <i class="uk-icon-youtube-play"></i>
                 </a>
             </li>
-            <li>
+            <li class="rss" data-uk-tooltip title="RSS-Feed">
                 <a href="">
                     <i class="uk-icon-rss"></i>
                 </a>
             </li>
-            <li>
+            <li class="facebook" data-uk-tooltip title="Facebook">
                 <a href="">
                     <i class="uk-icon-facebook"></i>
                 </a>
@@ -389,6 +389,7 @@
     'assets/vendor/uikit/css/components/sticky.min.css'
     'assets/vendor/uikit/css/components/slider.min.css'
     'assets/vendor/uikit/css/components/slidenav.min.css'
+    'assets/vendor/uikit/css/components/tooltip.min.css'
     'assets/css/index.css'
     filter='cssrewrite' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
@@ -403,6 +404,7 @@
     'assets/vendor/uikit/js/components/sticky.min.js'
     'assets/vendor/uikit/js/components/parallax.min.js'
     'assets/vendor/uikit/js/components/slider.min.js'
+    'assets/vendor/uikit/js/components/tooltip.min.js'
     'assets/vendor/vide/dist/jquery.vide.min.js'
     %}
     <script src="{{ asset_url }}"></script>
