@@ -38,6 +38,9 @@ a {
   background: #fff; }
   .uk-navbar .uk-navbar-nav > li > a {
     transition: color 0.5s, background-color 0.5s; }
+  .uk-navbar .uk-navbar-nav > li.uk-active > a, .uk-navbar .uk-navbar-nav > li:focus > a, .uk-navbar .uk-navbar-nav > li:active > a, .uk-navbar .uk-navbar-nav > li:hover > a {
+    color: #fff;
+    background-color: #8ec73b; }
   .uk-navbar .uk-navbar-nav > li.home a {
     background-image: url("../img/homeicon.png");
     background-repeat: no-repeat;
@@ -45,9 +48,12 @@ a {
     padding-left: 30px; }
   .uk-navbar .uk-navbar-nav > li.home.uk-active > a, .uk-navbar .uk-navbar-nav > li.home:focus > a, .uk-navbar .uk-navbar-nav > li.home:active > a, .uk-navbar .uk-navbar-nav > li.home:hover > a {
     background-image: url("../img/homeicon-active.png"); }
-  .uk-navbar .uk-navbar-nav > li.uk-active > a, .uk-navbar .uk-navbar-nav > li:focus > a, .uk-navbar .uk-navbar-nav > li:active > a, .uk-navbar .uk-navbar-nav > li:hover > a {
-    color: #fff;
-    background-color: #8ec73b; }
+  .uk-navbar .uk-navbar-nav > li.youtube.uk-active > a, .uk-navbar .uk-navbar-nav > li.youtube:focus > a, .uk-navbar .uk-navbar-nav > li.youtube:active > a, .uk-navbar .uk-navbar-nav > li.youtube:hover > a {
+    background: #f00; }
+  .uk-navbar .uk-navbar-nav > li.rss.uk-active > a, .uk-navbar .uk-navbar-nav > li.rss:focus > a, .uk-navbar .uk-navbar-nav > li.rss:active > a, .uk-navbar .uk-navbar-nav > li.rss:hover > a {
+    background: #fa0; }
+  .uk-navbar .uk-navbar-nav > li.facebook.uk-active > a, .uk-navbar .uk-navbar-nav > li.facebook:focus > a, .uk-navbar .uk-navbar-nav > li.facebook:active > a, .uk-navbar .uk-navbar-nav > li.facebook:hover > a {
+    background: #3b5998; }
 
 .uk-panel-box {
   background: #fff;
