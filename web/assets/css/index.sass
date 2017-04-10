@@ -43,6 +43,18 @@ a
     > li
       > a
         transition: color .5s, background-color .5s
+      &.home
+        a
+          background-image: url('../img/homeicon.png')
+          background-repeat: no-repeat
+          background-position: 15px 5px
+          padding-left: 30px
+        &.uk-active,
+        &:focus,
+        &:active,
+        &:hover
+          > a
+            background-image: url('../img/homeicon-active.png')
       &.uk-active,
       &:focus,
       &:active,
