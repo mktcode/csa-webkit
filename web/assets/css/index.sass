@@ -43,6 +43,8 @@ a
     > li
       > a
         transition: color .5s, background-color .5s
+        height: 50px
+        line-height: 50px
       &.uk-active,
       &:focus,
       &:active,
@@ -50,18 +52,6 @@ a
         > a
           color: #fff
           background-color: #8ec73b
-      &.home
-        a
-          background-image: url('../img/homeicon.png')
-          background-repeat: no-repeat
-          background-position: 15px 5px
-          padding-left: 30px
-        &.uk-active,
-        &:focus,
-        &:active,
-        &:hover
-          > a
-            background-image: url('../img/homeicon-active.png')
       &.youtube
         &.uk-active,
         &:focus,
@@ -83,6 +73,18 @@ a
         &:hover
           > a
             background: #3b5998
+  .brand
+    font-family: Inkpen2, sans-serif
+    font-size: 25px
+    height: 50px
+    line-height: 50px
+    span
+      background-image: url('../img/brand-schwein.png')
+      background-repeat: no-repeat
+      background-position: 0 4px
+      padding: 15px 15px 0 15px
+      display: inline-block
+      line-height: 25px
 
 .uk-panel-box
   background: #fff
@@ -96,29 +98,6 @@ a
 #header
   height: 400px
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset
-
-  #menu-toggle
-    color: #fff
-    &:focus,
-    &:active,
-    &:hover
-      color: #fff
-
-  h1, h2
-    font-family: Inkpen2, sans-serif
-    color: #f2f2f2
-    text-shadow: 3px 3px 0 #72ae41, 0 0 20px rgba(0, 0, 0, 0.8)
-  h1
-    font-size: 100px
-    line-height: 120px
-    position: relative
-    img
-      position: absolute
-      top: -75px
-      left: -100px
-  h2
-    font-size: 60px
-    line-height: 70px
 
   #vide-toggle,
   #vide-mute

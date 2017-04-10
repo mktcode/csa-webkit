@@ -37,23 +37,30 @@ a {
 .uk-navbar {
   background: #fff; }
   .uk-navbar .uk-navbar-nav > li > a {
-    transition: color 0.5s, background-color 0.5s; }
+    transition: color 0.5s, background-color 0.5s;
+    height: 50px;
+    line-height: 50px; }
   .uk-navbar .uk-navbar-nav > li.uk-active > a, .uk-navbar .uk-navbar-nav > li:focus > a, .uk-navbar .uk-navbar-nav > li:active > a, .uk-navbar .uk-navbar-nav > li:hover > a {
     color: #fff;
     background-color: #8ec73b; }
-  .uk-navbar .uk-navbar-nav > li.home a {
-    background-image: url("../img/homeicon.png");
-    background-repeat: no-repeat;
-    background-position: 15px 5px;
-    padding-left: 30px; }
-  .uk-navbar .uk-navbar-nav > li.home.uk-active > a, .uk-navbar .uk-navbar-nav > li.home:focus > a, .uk-navbar .uk-navbar-nav > li.home:active > a, .uk-navbar .uk-navbar-nav > li.home:hover > a {
-    background-image: url("../img/homeicon-active.png"); }
   .uk-navbar .uk-navbar-nav > li.youtube.uk-active > a, .uk-navbar .uk-navbar-nav > li.youtube:focus > a, .uk-navbar .uk-navbar-nav > li.youtube:active > a, .uk-navbar .uk-navbar-nav > li.youtube:hover > a {
     background: #f00; }
   .uk-navbar .uk-navbar-nav > li.rss.uk-active > a, .uk-navbar .uk-navbar-nav > li.rss:focus > a, .uk-navbar .uk-navbar-nav > li.rss:active > a, .uk-navbar .uk-navbar-nav > li.rss:hover > a {
     background: #fa0; }
   .uk-navbar .uk-navbar-nav > li.facebook.uk-active > a, .uk-navbar .uk-navbar-nav > li.facebook:focus > a, .uk-navbar .uk-navbar-nav > li.facebook:active > a, .uk-navbar .uk-navbar-nav > li.facebook:hover > a {
     background: #3b5998; }
+  .uk-navbar .brand {
+    font-family: Inkpen2, sans-serif;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px; }
+    .uk-navbar .brand span {
+      background-image: url("../img/brand-schwein.png");
+      background-repeat: no-repeat;
+      background-position: 0 4px;
+      padding: 15px 15px 0 15px;
+      display: inline-block;
+      line-height: 25px; }
 
 .uk-panel-box {
   background: #fff;
@@ -67,25 +74,6 @@ a {
 #header {
   height: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset; }
-  #header #menu-toggle {
-    color: #fff; }
-    #header #menu-toggle:focus, #header #menu-toggle:active, #header #menu-toggle:hover {
-      color: #fff; }
-  #header h1, #header h2 {
-    font-family: Inkpen2, sans-serif;
-    color: #f2f2f2;
-    text-shadow: 3px 3px 0 #72ae41, 0 0 20px rgba(0, 0, 0, 0.8); }
-  #header h1 {
-    font-size: 100px;
-    line-height: 120px;
-    position: relative; }
-    #header h1 img {
-      position: absolute;
-      top: -75px;
-      left: -100px; }
-  #header h2 {
-    font-size: 60px;
-    line-height: 70px; }
   #header #vide-toggle,
   #header #vide-mute {
     transition: opacity 0.5s;
