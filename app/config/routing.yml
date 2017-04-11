@@ -1,6 +1,10 @@
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
-app:
-    resource: '@AppBundle/Controller/'
+app_member:
+    resource: '@AppBundle/Controller/MemberController.php'
+    type: annotation
+
+app_website:
+    resource: '@AppBundle/Controller/HomepageController.php'
     type: annotation

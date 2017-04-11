@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/default.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>Mitglieder-Bereich</span></li>
+    </ul>
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center">Mitglieder-Bereich</h1>
+
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}
