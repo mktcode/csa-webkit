@@ -77,9 +77,12 @@ a {
     line-height: 25px; }
 
 .uk-breadcrumb {
+  background: #fff;
+  border-top: solid 1px #ddd;
   border-bottom: solid 1px #ddd;
   margin-top: 0;
-  padding: 4px 0; }
+  padding: 4px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
 
 .uk-panel-box {
   background: #fff;
@@ -88,11 +91,11 @@ a {
   overflow: hidden; }
 
 #navbar {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
 
 #header {
   height: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset; }
+  box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.1) inset; }
   #header.small {
     height: 250px; }
   #header #vide-toggle,
