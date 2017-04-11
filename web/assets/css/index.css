@@ -34,6 +34,18 @@ a {
 .uk-form textarea {
   border-radius: 4px; }
 
+.uk-alert {
+  border-radius: 4px; }
+
+.uk-alert-danger {
+  border: solid 1px #d85030; }
+
+.uk-alert-success {
+  border: solid 1px #659f13; }
+
+.uk-alert-warning {
+  border: solid 1px #e28327; }
+
 .uk-navbar {
   background: #fff; }
   .uk-navbar .uk-navbar-nav > li > a {
@@ -81,6 +93,8 @@ a {
 #header {
   height: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset; }
+  #header.small {
+    height: 250px; }
   #header #vide-toggle,
   #header #vide-mute {
     transition: opacity 0.5s;
@@ -95,10 +109,11 @@ a {
   #header:hover #vide-mute {
     opacity: 1; }
 
-#contact {
-  background: #eee;
+.section {
   padding-top: 50px;
   padding-bottom: 50px; }
+  .section.grey {
+    background: #eee; }
 
 #partner .uk-slider li a {
   display: block; }

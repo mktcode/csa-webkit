@@ -37,6 +37,15 @@ a
 .uk-form textarea
   border-radius: 4px
 
+.uk-alert
+  border-radius: 4px
+.uk-alert-danger
+  border: solid 1px #d85030
+.uk-alert-success
+  border: solid 1px #659f13
+.uk-alert-warning
+  border: solid 1px #e28327
+
 .uk-navbar
   background: #fff
   .uk-navbar-nav
@@ -108,6 +117,8 @@ a
 #header
   height: 400px
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset
+  &.small
+    height: 250px
 
   #vide-toggle,
   #vide-mute
@@ -124,10 +135,12 @@ a
     #vide-mute
       opacity: 1
 
-#contact
-  background: #eee
+.section
   padding-top: 50px
   padding-bottom: 50px
+
+  &.grey
+    background: #eee
 
 #partner
   .uk-slider
