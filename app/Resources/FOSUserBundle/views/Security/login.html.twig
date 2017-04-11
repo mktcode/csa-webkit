@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/default.jpg');"></div>
+
+    <div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+        <h1 class="uk-text-center uk-margin-bottom-remove">Mitglieder-Bereich</h1>
+        <h2 class="uk-text-center uk-margin-bottom-remove uk-margin-top-remove uk-text-muted">Anmeldung</h2>
+    </div>
+
+    <div class="grey section">
+        <div class="uk-container-center" style="width: 300px;">
+            {% if error %}
+                <div class="uk-alert uk-alert-danger">
+                    <i class="uk-icon-warning"></i>
+                    {{ error.messageKey|trans(error.messageData, 'security') }}
+                </div>
+            {% endif %}
+
+            <form class="uk-form" action="{{ path("fos_user_security_check") }}" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+
+                <div class="uk-form-row">
+                    <label for="username">{{ 'security.login.username'|trans }}</label>
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required"
+                           class="uk-width-1-1 uk-form-large"/>
+                </div>
+
+                <div class="uk-form-row">
+                    <label for="password">{{ 'security.login.password'|trans }}</label>
+                    <input type="password" id="password" name="_password" required="required"
+                           class="uk-width-1-1 uk-form-large"/>
+                    <a href="{{ path('fos_user_resetting_request') }}">
+                        {{ 'resetting.request.submit'|trans }}
+                    </a>
+                </div>
+
+                <div class="uk-form-row">
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                </div>
+
+                <div class="uk-form-row">
+                    <button id="_submit" name="_submit" class="uk-button uk-button-success uk-button-large uk-width-1-1">
+                        {{ 'security.login.submit'|trans }}
+                        <i class="uk-icon-sign-in"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}
