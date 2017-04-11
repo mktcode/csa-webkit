@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    {% include 'navbar.html.twig' %}
+    {% include 'homepage/navbar.html.twig' %}
 
     <div id="header" class="uk-cover-background uk-flex uk-flex-center uk-flex-middle uk-flex-column"
          data-vide-bg="/assets/video/hofpente" data-vide-options="muted: false, loop: false">
@@ -314,32 +314,12 @@
         </div>
     </div>
 
-    {% include 'footer.html.twig' %}
-{% endblock %}
-
-{% block stylesheets %}
-    {{ parent() }}
-    {% stylesheets
-    'assets/vendor/uikit/css/uikit.min.css'
-    'assets/vendor/uikit/css/components/sticky.min.css'
-    'assets/vendor/uikit/css/components/slider.min.css'
-    'assets/vendor/uikit/css/components/slidenav.min.css'
-    'assets/vendor/uikit/css/components/tooltip.min.css'
-    'assets/css/index.css'
-    filter='cssrewrite' %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
+    {% include 'homepage/footer.html.twig' %}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
     {% javascripts
-    'assets/vendor/jquery/dist/jquery.min.js'
-    'assets/vendor/uikit/js/uikit.min.js'
-    'assets/vendor/uikit/js/components/sticky.min.js'
-    'assets/vendor/uikit/js/components/parallax.min.js'
-    'assets/vendor/uikit/js/components/slider.min.js'
-    'assets/vendor/uikit/js/components/tooltip.min.js'
     'assets/vendor/vide/dist/jquery.vide.min.js'
     %}
     <script src="{{ asset_url }}"></script>

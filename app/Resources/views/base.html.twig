@@ -5,10 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
         <title>{% block title %}Hof Pente - Handlungspädagogische Provinz<{% endblock %}</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            {% stylesheets
+            'assets/vendor/uikit/css/uikit.min.css'
+            'assets/vendor/uikit/css/components/sticky.min.css'
+            'assets/vendor/uikit/css/components/slider.min.css'
+            'assets/vendor/uikit/css/components/slidenav.min.css'
+            'assets/vendor/uikit/css/components/tooltip.min.css'
+            'assets/css/index.css'
+            filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            {% javascripts
+            'assets/vendor/jquery/dist/jquery.min.js'
+            'assets/vendor/uikit/js/uikit.min.js'
+            'assets/vendor/uikit/js/components/sticky.min.js'
+            'assets/vendor/uikit/js/components/slider.min.js'
+            'assets/vendor/uikit/js/components/tooltip.min.js'
+            %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
     </body>
 </html>
