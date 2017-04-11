@@ -1,0 +1,60 @@
+{% extends 'form_div_layout.html.twig' %}
+
+{%- block form_start -%}
+    {% set attr = attr|merge({ 'class': (attr.class|default('') ~ ' uk-form uk-form-stacked')|trim }) %}
+    {{ parent() }}
+{%- endblock form_start -%}
+
+{%- block form_row -%}
+    <div class="uk-form-row">
+        {{- form_label(form) -}}
+        {{- form_widget(form) -}}
+        {{- form_errors(form) -}}
+    </div>
+{%- endblock form_row -%}
+
+{%- block form_widget_simple -%}
+    {% set attr = attr|merge({ 'class': (attr.class|default('') ~ ' uk-width-1-1 uk-form-large')|trim }) %}
+    {{ parent() }}
+{%- endblock form_widget_simple -%}
+
+{%- block form_label -%}
+    {% set label_attr = label_attr|merge({ 'class': (label_attr.class|default('') ~ ' uk-form-label')|trim }) %}
+    {{ parent() }}
+{%- endblock form_label -%}
+
+{%- block form_errors -%}
+    {%- if errors|length > 0 -%}
+        {%- for error in errors -%}
+            <div class="uk-alert uk-alert-danger">
+                {{ error.message }}
+            </div>
+        {%- endfor -%}
+    {%- endif -%}
+{%- endblock form_errors -%}
+
+{%- block password_widget -%}
+    {%- if not valid -%}
+        {%- set attr = attr|merge({class: (attr.class|default('') ~ ' uk-form-danger')|trim}) -%}
+    {%- endif -%}
+    {%- set attr = attr|merge({class: (attr.class|default('') ~ ' uk-form-large uk-width-1-1')|trim}) -%}
+    <div class="uk-form-controls">
+        <div class="uk-form-password uk-width-1-1">
+            {%- set type = type|default('password') -%}
+            <input type="{{- type -}}" {{- block('widget_attributes') -}} {%- if value is not empty -%}value="{{- value -}}" {%- endif -%}/>
+            <a href="" class="uk-form-password-toggle" tabindex="-1"
+               data-uk-form-password="{lblShow: '<i class=uk-icon-eye></i>', lblHide: '<i class=uk-icon-eye-slash></i>'}">
+                <i class="uk-icon-eye"></i>
+            </a>
+        </div>
+    </div>
+{%- endblock password_widget -%}
+
+{%- block money_widget -%}
+    {%- set type = type|default('text') -%}
+    {% set attr = attr|merge({ 'class': (attr.class|default('') ~ ' uk-width-1-1 uk-form-large')|trim }) %}
+    <div class="uk-form-icon uk-width-1-1">
+        <i class="uk-icon-dollar"></i>
+        <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+    </div>
+{%- endblock money_widget -%}
