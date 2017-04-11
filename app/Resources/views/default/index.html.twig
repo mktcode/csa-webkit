@@ -1,61 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <nav id="navbar" class="uk-navbar" data-uk-sticky>
-        <ul class="uk-navbar-nav">
-            <li class="uk-active home">
-                <a href="//hofpente.local">
-                    Hof Pente
-                </a>
-            </li>
-            <li>
-                <a href="//csa.hofpente.local">
-                    CSA
-                </a>
-            </li>
-            <li>
-                <a href="//bildung.hofpente.local">
-                    Bildung
-                </a>
-            </li>
-            <li>
-                <a href="//blog.hofpente.local">
-                    Blog &amp; Medien
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Termine
-                </a>
-            </li>
-        </ul>
-        <ul class="uk-navbar-nav uk-navbar-flip">
-            <li class="youtube">
-                <a href="" data-uk-tooltip title="YouTube">
-                    <i class="uk-icon-youtube-play"></i>
-                </a>
-            </li>
-            <li class="rss" data-uk-tooltip title="RSS-Feed">
-                <a href="">
-                    <i class="uk-icon-rss"></i>
-                </a>
-            </li>
-            <li class="facebook" data-uk-tooltip title="Facebook">
-                <a href="">
-                    <i class="uk-icon-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a href="//csa.hofpente.local/login.html">
-                    <i class="uk-icon-user"></i>
-                    Mitglieder-Bereich
-                </a>
-            </li>
-        </ul>
-        <div class="uk-navbar-content uk-navbar-center brand">
-            <span>CSA Hof Pente</span>
-        </div>
-    </nav>
+    {% include 'navbar.html.twig' %}
 
     <div id="header" class="uk-cover-background uk-flex uk-flex-center uk-flex-middle uk-flex-column"
          data-vide-bg="/assets/video/hofpente" data-vide-options="muted: false, loop: false">
@@ -70,8 +16,8 @@
     </div>
 
     <div class="uk-container uk-container-center uk-margin-large-top">
-        <h2 class="uk-text-center uk-margin-bottom-remove">Herzlich Willkommen auf dem CSA-Hof Pente!</h2>
-        <h3 class="uk-text-center uk-margin-top-remove uk-text-muted">Wir landwirtschaften biologisch-dynamisch, gemeinschaftsgetragen &amp; solidarisch!</h3>
+        <h1 class="uk-text-center uk-margin-bottom-remove">Herzlich Willkommen auf dem CSA-Hof Pente!</h1>
+        <h2 class="uk-text-center uk-margin-top-remove uk-text-muted">Wir landwirtschaften biologisch-dynamisch, gemeinschaftsgetragen &amp; solidarisch!</h2>
         <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
             <div class="uk-width-medium-1-2">
                 <p>
@@ -115,7 +61,7 @@
                     <h3 class="uk-panel-title">Arbeitsbereiche</h3>
                     Der Erhalt der Vielfalt ist uns besonders wichtig. Dementsprechend vielfältig sind auch unsere
                     Arbeitsbereiche.
-                    <a href="" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                    <a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
                         weiter lesen
                         <i class="uk-icon-angle-double-right"></i>
                     </a>

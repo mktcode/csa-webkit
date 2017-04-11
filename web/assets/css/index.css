@@ -37,9 +37,7 @@ a {
 .uk-navbar {
   background: #fff; }
   .uk-navbar .uk-navbar-nav > li > a {
-    transition: color 0.5s, background-color 0.5s;
-    height: 50px;
-    line-height: 50px; }
+    transition: color 0.5s, background-color 0.5s; }
   .uk-navbar .uk-navbar-nav > li.uk-active > a, .uk-navbar .uk-navbar-nav > li:focus > a, .uk-navbar .uk-navbar-nav > li:active > a, .uk-navbar .uk-navbar-nav > li:hover > a {
     color: #fff;
     background-color: #8ec73b; }
@@ -49,18 +47,27 @@ a {
     background: #fa0; }
   .uk-navbar .uk-navbar-nav > li.facebook.uk-active > a, .uk-navbar .uk-navbar-nav > li.facebook:focus > a, .uk-navbar .uk-navbar-nav > li.facebook:active > a, .uk-navbar .uk-navbar-nav > li.facebook:hover > a {
     background: #3b5998; }
-  .uk-navbar .brand {
-    font-family: Inkpen2, sans-serif;
-    font-size: 25px;
-    height: 50px;
-    line-height: 50px; }
-    .uk-navbar .brand span {
-      background-image: url("../img/brand-schwein.png");
-      background-repeat: no-repeat;
-      background-position: 0 4px;
-      padding: 15px 15px 0 15px;
-      display: inline-block;
-      line-height: 25px; }
+
+#navbar .uk-navbar-nav > li > a {
+  height: 50px;
+  line-height: 50px; }
+#navbar .brand {
+  font-family: Inkpen2, sans-serif;
+  font-size: 25px;
+  height: 50px;
+  line-height: 50px; }
+  #navbar .brand span {
+    background-image: url("../img/brand-schwein.png");
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    padding: 15px 15px 0 15px;
+    display: inline-block;
+    line-height: 25px; }
+
+.uk-breadcrumb {
+  border-bottom: solid 1px #ddd;
+  margin-top: 0;
+  padding: 4px 0; }
 
 .uk-panel-box {
   background: #fff;

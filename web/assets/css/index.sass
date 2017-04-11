@@ -43,8 +43,6 @@ a
     > li
       > a
         transition: color .5s, background-color .5s
-        height: 50px
-        line-height: 50px
       &.uk-active,
       &:focus,
       &:active,
@@ -73,6 +71,13 @@ a
         &:hover
           > a
             background: #3b5998
+
+#navbar
+  .uk-navbar-nav
+    > li
+      > a
+        height: 50px
+        line-height: 50px
   .brand
     font-family: Inkpen2, sans-serif
     font-size: 25px
@@ -85,6 +90,11 @@ a
       padding: 15px 15px 0 15px
       display: inline-block
       line-height: 25px
+
+.uk-breadcrumb
+  border-bottom: solid 1px #ddd
+  margin-top: 0
+  padding: 4px 0
 
 .uk-panel-box
   background: #fff
