@@ -52,61 +52,95 @@
     <hr class="uk-margin-large-top"/>
 
     <div class="uk-container uk-container-center uk-margin-large-top">
-        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-large-1-4 uk-width-medium-1-3">
-                <div class="uk-panel uk-panel-box">
-                    <div class="uk-panel-teaser">
-                        <img src="{{ asset('assets/img/teasers/arbeitsbereiche.jpg') }}" alt="">
-                    </div>
-                    <h3 class="uk-panel-title">Arbeitsbereiche</h3>
-                    Der Erhalt der Vielfalt ist uns besonders wichtig. Dementsprechend vielfältig sind auch unsere
-                    Arbeitsbereiche.
-                    <a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
-                        weiter lesen
-                        <i class="uk-icon-angle-double-right"></i>
-                    </a>
-                </div>
+
+        <div data-uk-slider="{autoplay: true}">
+            <div class="uk-slider-container">
+                <ul class="uk-slider uk-grid uk-grid-small uk-grid-width-medium-1-4">
+                    <li>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-teaser">
+                                <img src="{{ asset('assets/img/teasers/arbeitsbereiche.jpg') }}" alt="">
+                            </div>
+                            <h3 class="uk-panel-title">Arbeitsbereiche</h3>
+                            Der Erhalt der Vielfalt ist uns besonders wichtig. Dementsprechend vielfältig sind auch
+                            unsere
+                            Arbeitsbereiche.
+                            <a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}"
+                               class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                                weiter lesen
+                                <i class="uk-icon-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-teaser">
+                                <img src="{{ asset('assets/img/teasers/geschichte.jpg') }}" alt="">
+                            </div>
+                            <h3 class="uk-panel-title">Geschichte &amp; Betriebsspiegel</h3>
+                            Die Geschichte des Hofes geht auf eine lange Generationenreihe zurück. Ein eingemauerter
+                            Balken trägt
+                            die Jahreszahl 1565.
+                            <a href="{{ path('page', {'page': 'geschichte-und-betriebsspiegel'}) }}"
+                               class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                                weiter lesen
+                                <i class="uk-icon-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-teaser">
+                                <img src="{{ asset('assets/img/teasers/biodynamischie-landwirtschaft.jpg') }}" alt="">
+                            </div>
+                            <h3 class="uk-panel-title">Biodynamisch &amp; Solidarisch</h3>
+                            Die zentrale Idee ist, dass der Hof als ein Organismus betrachtet wird, in den wir nun auch
+                            die
+                            Verbraucher mit einbeziehen.
+                            <a href="" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                                weiter lesen
+                                <i class="uk-icon-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-teaser">
+                                <img src="{{ asset('assets/img/teasers/tiere.jpg') }}" alt="">
+                            </div>
+                            <h3 class="uk-panel-title">Die Tiere</h3>
+                            Wir haben einige Tiere auf unserem Hof und möchten einige Gedanken zu deren Rolle und
+                            unserer Sichtweise dazu darstellen.
+                            <a href="{{ path('page', {'page': 'tiere'}) }}"
+                               class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                                weiter lesen
+                                <i class="uk-icon-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-teaser">
+                                <img src="{{ asset('assets/img/teasers/menschen.jpg') }}" alt="">
+                            </div>
+                            <h3 class="uk-panel-title">Menschen vom Hof</h3>
+                            Auf dem Hof leben 20 Menschen. An unserem Gemeinschaftsprojekt sind aber natürlich weitaus
+                            mehr Menschen beteiligt.
+                            <a href="" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                                weiter lesen
+                                <i class="uk-icon-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="uk-width-large-1-4 uk-width-medium-1-3">
-                <div class="uk-panel uk-panel-box">
-                    <div class="uk-panel-teaser">
-                        <img src="{{ asset('assets/img/teasers/geschichte.jpg') }}" alt="">
-                    </div>
-                    <h3 class="uk-panel-title">Geschichte &amp;  Betriebsspiegel</h3>
-                    Die Geschichte des Hofes geht auf eine lange Generationenreihe zurück. Ein eingemauerter Balken trägt
-                    die Jahreszahl 1565.
-                    <a href="{{ path('page', {'page': 'geschichte-und-betriebsspiegel'}) }}" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
-                        weiter lesen
-                        <i class="uk-icon-angle-double-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="uk-width-large-1-4 uk-width-medium-1-3">
-                <div class="uk-panel uk-panel-box">
-                    <div class="uk-panel-teaser">
-                        <img src="{{ asset('assets/img/teasers/biodynamischie-landwirtschaft.jpg') }}" alt="">
-                    </div>
-                    <h3 class="uk-panel-title">Biodynamisch &amp; Solidarisch</h3>
-                    Die zentrale Idee ist, dass der Hof als ein Organismus betrachtet wird, in den wir nun auch die
-                    Verbraucher mit einbeziehen.
-                    <a href="" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
-                        weiter lesen
-                        <i class="uk-icon-angle-double-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="uk-width-large-1-4 uk-width-medium-1-3">
-                <div class="uk-panel uk-panel-box">
-                    <div class="uk-panel-teaser">
-                        <img src="{{ asset('assets/img/teasers/menschen.jpg') }}" alt="">
-                    </div>
-                    <h3 class="uk-panel-title">Menschen vom Hof</h3>
-                    Auf dem Hof leben 20 Menschen. An unserem Gemeinschaftsprojekt sind aber natürlich weitaus mehr Menschen beteiligt.
-                    <a href="" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
-                        weiter lesen
-                        <i class="uk-icon-angle-double-right"></i>
-                    </a>
-                </div>
+            <div class="uk-text-center uk-margin-top">
+                <a href="" class="uk-button uk-button-small uk-button-success" data-uk-slider-item="previous">
+                    <i class="uk-icon-angle-left"></i>
+                </a>
+                <a href="" class="uk-button uk-button-small uk-button-success" data-uk-slider-item="next">
+                    <i class="uk-icon-angle-right"></i>
+                </a>
             </div>
         </div>
     </div>
