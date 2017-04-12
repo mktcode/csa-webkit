@@ -50,7 +50,8 @@ a
   background: #fff
   .uk-navbar-nav
     > li
-      > a
+      a
+        color: #444
         transition: color .5s, background-color .5s
       &.uk-active,
       &:focus,
@@ -153,3 +154,7 @@ a
 
 #footer
   border-top: solid 1px #ddd
+
+@media (max-width: 767px)
+  #header
+    height: 170px

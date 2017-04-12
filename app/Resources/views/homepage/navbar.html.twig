@@ -1,6 +1,42 @@
 <nav id="navbar" class="uk-navbar" data-uk-sticky>
-    <ul class="uk-navbar-nav">
-        <li class="uk-active home">
+    <ul class="uk-navbar-nav uk-visible-small">
+        <li class="uk-active uk-parent" data-uk-dropdown>
+            <a href="#" style="cursor: pointer;">
+                <i class="uk-icon-bars"></i>
+            </a>
+            <div class="uk-dropdown uk-dropdown-small uk-dropdown-navbar">
+                <ul class="uk-nav">
+                    <li>
+                        <a href="{{ path('homepage') }}">
+                            Hof Pente
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//csa.hofpente.local">
+                            CSA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//bildung.hofpente.local">
+                            Bildung
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//blog.hofpente.local">
+                            Blog &amp; Medien
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Termine
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li class="uk-active">
             <a href="{{ path('homepage') }}">
                 Hof Pente
             </a>
@@ -45,12 +81,12 @@
         <li>
             <a href="{{ path('member') }}">
                 <i class="uk-icon-users"></i>
-                Mitglieder-Bereich
+                <span class="uk-hidden-small uk-hidden-medium">Mitglieder-Bereich</span>
             </a>
         </li>
 
     </ul>
-    <div class="uk-navbar-content uk-navbar-center brand">
+    <div class="uk-navbar-content uk-navbar-center uk-hidden-small uk-hidden-medium brand">
         <span>CSA Hof Pente</span>
     </div>
 </nav>

@@ -48,7 +48,8 @@ a {
 
 .uk-navbar {
   background: #fff; }
-  .uk-navbar .uk-navbar-nav > li > a {
+  .uk-navbar .uk-navbar-nav > li a {
+    color: #444;
     transition: color 0.5s, background-color 0.5s; }
   .uk-navbar .uk-navbar-nav > li.uk-active > a, .uk-navbar .uk-navbar-nav > li:focus > a, .uk-navbar .uk-navbar-nav > li:active > a, .uk-navbar .uk-navbar-nav > li:hover > a {
     color: #fff;
@@ -123,5 +124,9 @@ a {
 
 #footer {
   border-top: solid 1px #ddd; }
+
+@media (max-width: 767px) {
+  #header {
+    height: 170px; } }
 
 /*# sourceMappingURL=index.css.map */
