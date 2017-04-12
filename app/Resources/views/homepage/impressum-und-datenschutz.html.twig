@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/default.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted" data-uk-sticky="{top:50}">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>Impressum</span></li>
+    </ul>
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center">Impressum</h1>
+        <p class="uk-text-large uk-text-center">
+            <b>CSA Hof Pente GbR</b><br>
+            Dr. Tobias Hartkemeyer<br>
+            Osnabrücker Straße 73<br>
+            49565 Bramsche<br>
+            <br>
+            Tel.: +49 (0) 5407 85 85 23<br>
+            Fax: +49 (0) 5407 8984518<br>
+            <a href="mailto:buero@hofpente.de">buero@hofpente.de</a><br>
+            <br>
+            Hinweis: Für Inhalt und Aussage aller von uns verlinkten Webseiten sind wir nicht verantwortlich und haben auch keinen Einfluss darauf.
+        </p>
+        <h1 class="uk-text-center uk-margin-large-top">Datenschutz</h1>
+        <p class="uk-text-large">
+            <h3>Erhebung und Verarbeitung personenbezogener Daten</h3>
+            <p>Personenbezogene sind Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person. Dazu gehören Informationen wie Name, Anschrift, Telefonnummer oder Geburtsdatum. Informationen, die sich nicht unmittelbar mit Ihrer tatsächlichen Identität in Verbindung bringen lasssen – z.B. favorisierte Webseiten oder die Anzahl der Nutzer einer Seite – sind keine personenbezogenen Daten.</p>
+            <p>Personenbezogene Daten werden auf den Internetseiten von www.hofpente.de nicht erhoben und somit auch nicht an Dritte weitergegeben oder verkauft.</p>
+            <h3>Einsatz von Cookies</h3>
+            <p>Auf unseren Webseiten verwenden wir keine Cookies, abgesehen von so genannten Session-Cookies, die zur technischen Sitzungssteuerung im Speicher Ihres Browsers Daten ablegen. Diese Daten sind nicht personenbezogen und werden spätestens mit dem Schließen Ihres Browsers gelöscht.</p>
+            <h3>Speicherung von Daten auf dem Webserver</h3>
+            <p>Bei jedem Zugriff eines Nutzers auf eine Seite dieses Webangebotes werden Daten über diesen Vorgang in einer Protokolldatei gespeichert. Dabei geht es um folgende Informationen:</p>
+
+            <ul>
+                <li>Name der abgerufenen Datei/der abgerufenen Seite</li>
+                <li>Datum und Uhrzeit des Abrufs</li>
+                <li>Herkunftsseite (sog. “Referrer”) des Besuchers</li>
+                <li>Export und Verarbeitung der Daten in Staaten außerhalb des Europäischen Wirtschaftsraumes</li>
+            </ul>
+
+            <p>Es findet kein Export der Daten in Staaten außerhalb des EWR statt.</p>
+            <h3>Externe Links</h3>
+        <p>Auf unseren Seiten finden Sie unter Umständen Links auf externe Webseiten. Wir haben keinerlei Einfluss auf den Inhalt und die Gestaltung dieser Webseiten. Die Garantien dieser Datenschutzerklärung gelten daher dort nicht.</p>
+        </p>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}
