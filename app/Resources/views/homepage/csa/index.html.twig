@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{#
+Informationen für Landwirte
+Die Lebensmittel
+Abholung und Depots
+Finanzierung
+andere CSA-Höfe
+#}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/csa.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted" data-uk-sticky="{top:50}">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>CSA</span></li>
+    </ul>
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center uk-margin-bottom-remove"><b>C</b>ommunity <b>S</b>upported <b>A</b>griculture</h1>
+        <h2 class="uk-text-center uk-margin-top-remove uk-text-muted">Gemeinschaftsgetragene und solidarische Landwirtschaft</h2>
+
+        <h2 class="uk-margin-large-top uk-text-center">Warum CSA?</h2>
+        <div class="uk-clearfix uk-column-medium-1-2 uk-column-large-1-3">
+            <p>Immer mehr Menschen erkennen für sich die Bedeutung einer bewussten Ernährung mit gesunden, vitalen Lebensmitteln. In Zeiten zunehmender Kommerzialisierung biologisch angebauter Produkte stellt sich dem Verbraucher jedoch häufig die Frage, wie viel Bio er für sein Geld bekommt. CSA steht für gesunde, naturbelassene Lebensmittel in bester Qualität, die im Einklang mit Mensch und Natur entstanden sind.</p>
+            <p>Bei diesem Konzept werden die Lebensmittel nicht über den Markt vertrieben, sondern fließen in einen eigenen, von den Teilnehmern mitorganisierten und finanzierten, durchschaubaren Wirtschaftskreislauf. Es soll allen Teilnehmern ersichtlich werden, wohin ihr Geld fließt und welche Kosten anfallen. Sämtliche Vermarktungskosten fallen weg. So können Teilnehmer und Produzenten zusammen Landbau- und Ernährungskultur gestalten und gemeinsam Verantwortung für ihre Lebensmittel und Umwelt übernehmen.</p>
+            <p>CSA bedeutet auch, dass die Teilnehmer erleben können, wie ihre Ernährungsentscheidung die Kulturlandschaft gestaltet und Artenvielfalt ermöglicht.</p>
+        </div>
+
+        <p class="uk-text-large uk-text-center uk-margin-large-top">
+            CSA ist ein Modell der Zusammenarbeit zwischen Erzeugern und Verbrauchern.
+        </p>
+
+        <h2 class="uk-margin-large-top uk-text-center">Vorteile</h2>
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-2">
+                <h3>Für Verbraucher</h3>
+                <ul>
+                    <li>jede Woche frische, gesunde Lebensmittel ohne Gentechnik</li>
+                    <li>wissen wo, wie und von wem diese erzeugt werden</li>
+                    <li>bezahlbar durch Selbstkostenpreis ohne Vermarktungsaufwand</li>
+                    <li>ökologisch durch kurze Transportwege und kaum Verpackungsmüll</li>
+                    <li>Bezug zur Landwirtschaft und echte Mitgestaltungsmöglichkeit</li>
+                    <li>gesellschaftliche Teilnahme und Austausch mit Anderen</li>
+                    <li>Unterstützung der regionalen Wirtschaft und Umwelt</li>
+                    <li>Verstehbares Wirtschaftssystem mit transparenten Geld- und Warenströmen</li>
+                </ul>
+            </div>
+            <div class="uk-width-medium-1-2">
+                <h3>Für Erzeuger, Region und Umwelt</h3>
+                <ul>
+                    <li>direkte Abgabe der Waren ohne lange Vermarktungskette</li>
+                    <li>keine Überproduktion für den Müll</li>
+                    <li>Unabhängigkeit vom Marktgeschehen und Sicherung der Existenz durch kalkulierbare Einnahmen</li>
+                    <li>Erhalt der Bodenfruchtbarkeit durch ökologische Bewirtschaftung</li>
+                    <li>Erhalt und Gestaltung einer vielfältigen Landschaft und Landwirtschaft</li>
+                    <li>Erhalt und Schaffung von Arbeitsplätzen auf dem Land</li>
+                    <li>höhere Zufriedenheit, durch sinnstiftende Arbeit und mehr Werzschätzung</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="uk-text-large uk-text-center uk-margin-large-top">
+            Solidarische Landwirtschaft: Eine Lebens(mittel)versicherung für Landwirt und Verbraucher!
+        </p>
+
+        <h2 class="uk-margin-large-top uk-text-center">Häufige Fragen</h2>
+        <div class="uk-accordion" data-uk-accordion="{showfirst: false}">
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Was kostet das?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Gibt es auch Fleisch?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>
+                    Ja. Es gibt zwar immer wieder Menschen, die es fragwürdig finden, dass wir im Rahmen des CSA-Konzepts unsere Tiere auch töten und wir halten selbst viel von vegetarischer Ernährung. Es gibt aber immer noch Menschen (auch hier auf dem Hof), die gerne ab und zu gutes Fleisch essen. Hier sollte jeder seinen eigenen Umgang finden.
+                    Uns ist wichtig, dass wir einen respektvollen Umgang mit den Tieren pflegen und ihnen mit Wertschätzung begegnen. <a href="{{ path('page', {'page': 'tiere'}) }}">Mehr zur Tierhaltung auf Hof Pente</a>
+                </p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Welche Lebensmittel bekommt man bei euch?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Auf Basis dieser neuen Idee der kulturellen Landwirtschaft ist es den Landwirten möglich, ein ganz besonders vielfältiges Lebensmittelangebot bereitzustellen. Bei uns gibt es <b>über 100 verschiedene Gemüsesorten, Salate, Kräuter, Eier, Honig, Fleischprodukte und viele verschiedene Brotsorten</b> – alles in bester Demeter-Qualität.</p>
+            </div>
+
+        </div>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'assets/vendor/uikit/css/components/accordion.min.css'
+    filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts
+    'assets/vendor/uikit/js/components/accordion.min.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
