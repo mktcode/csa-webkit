@@ -61,6 +61,15 @@ a {
   .uk-navbar .uk-navbar-nav > li.facebook.uk-active > a, .uk-navbar .uk-navbar-nav > li.facebook:focus > a, .uk-navbar .uk-navbar-nav > li.facebook:active > a, .uk-navbar .uk-navbar-nav > li.facebook:hover > a {
     background: #3b5998; }
 
+.uk-subnav.uk-subnav-pill > li > a {
+  border-radius: 4px;
+  background: #f0f0f0; }
+  .uk-subnav.uk-subnav-pill > li > a:hover, .uk-subnav.uk-subnav-pill > li > a:focus, .uk-subnav.uk-subnav-pill > li > a:active {
+    color: #fff;
+    background: #8ec73b !important; }
+.uk-subnav.uk-subnav-pill > li.uk-active > a {
+  background: #8ec73b !important; }
+
 #navbar .uk-navbar-nav > li > a {
   height: 50px;
   line-height: 50px; }

@@ -28,13 +28,13 @@ class HomepageController extends Controller
         // look for explicit file
         $template = 'homepage/' . $page . '.html.twig';
         if ($templating->exists($template)) {
-            return $this->render($template);
+            return $this->render($template, ['page' => $page]);
         }
 
         // look for directory index
         $template = 'homepage/' . $page . '/index.html.twig';
         if ($templating->exists($template)) {
-            return $this->render($template);
+            return $this->render($template, ['page' => $page]);
         }
 
         if ($templating->exists('homepage/404.html.twig')) {

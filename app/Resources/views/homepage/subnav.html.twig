@@ -1,0 +1,27 @@
+<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-top">
+    <li{% if page == 'arbeitsbereiche' %} class="uk-active"{% endif %}>
+        <a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}">
+            Arbeitsbereiche
+        </a>
+    </li>
+    <li{% if page == 'geschichte-und-betriebsspiegel' %} class="uk-active"{% endif %}>
+        <a href="{{ path('page', {'page': 'geschichte-und-betriebsspiegel'}) }}">
+            Geschichte & Betriebsspiegel
+        </a>
+    </li>
+    <li>
+        <a href="">
+            Biodynamisch & Solidarisch
+        </a>
+    </li>
+    <li{% if page == 'tiere' %} class="uk-active"{% endif %}>
+        <a href="{{ path('page', {'page': 'tiere'}) }}">
+            Die Tiere
+        </a>
+    </li>
+    <li>
+        <a href="">
+            Menschen vom Hof
+        </a>
+    </li>
+</ul>

@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {#
+Mitglied werden
 Informationen für Landwirte
 Die Lebensmittel
 Abholung und Depots
@@ -22,10 +23,13 @@ andere CSA-Höfe
         <h1 class="uk-text-center uk-margin-bottom-remove"><b>C</b>ommunity <b>S</b>upported <b>A</b>griculture</h1>
         <h2 class="uk-text-center uk-margin-top-remove uk-text-muted">Gemeinschaftsgetragene und solidarische Landwirtschaft</h2>
 
+        {% include 'homepage/csa/subnav.html.twig' %}
+
         <h2 class="uk-margin-large-top uk-text-center">Warum CSA?</h2>
         <div class="uk-clearfix uk-column-medium-1-2 uk-column-large-1-3">
-            <p>Immer mehr Menschen erkennen für sich die Bedeutung einer bewussten Ernährung mit gesunden, vitalen Lebensmitteln. In Zeiten zunehmender Kommerzialisierung biologisch angebauter Produkte stellt sich dem Verbraucher jedoch häufig die Frage, wie viel Bio er für sein Geld bekommt. CSA steht für gesunde, naturbelassene Lebensmittel in bester Qualität, die im Einklang mit Mensch und Natur entstanden sind.</p>
-            <p>Bei diesem Konzept werden die Lebensmittel nicht über den Markt vertrieben, sondern fließen in einen eigenen, von den Teilnehmern mitorganisierten und finanzierten, durchschaubaren Wirtschaftskreislauf. Es soll allen Teilnehmern ersichtlich werden, wohin ihr Geld fließt und welche Kosten anfallen. Sämtliche Vermarktungskosten fallen weg. So können Teilnehmer und Produzenten zusammen Landbau- und Ernährungskultur gestalten und gemeinsam Verantwortung für ihre Lebensmittel und Umwelt übernehmen.</p>
+            <p>Immer mehr Menschen erkennen für sich die Bedeutung einer bewussten Ernährung mit gesunden, vitalen Lebensmitteln. In Zeiten zunehmender Kommerzialisierung biologisch angebauter Produkte stellt sich dem Verbraucher jedoch häufig die Frage, wie viel Bio er für sein Geld bekommt.</p>
+            <p>CSA steht für gesunde, naturbelassene Lebensmittel in bester Qualität, die im Einklang mit Mensch und Natur entstanden sind. Bei diesem Konzept werden die Lebensmittel nicht über den Markt vertrieben, sondern fließen in einen eigenen, von den Teilnehmern mitorganisierten und finanzierten, durchschaubaren Wirtschaftskreislauf. Es soll allen Teilnehmern ersichtlich werden, wohin ihr Geld fließt und welche Kosten anfallen. Sämtliche Vermarktungskosten fallen weg.</p>
+            <p>So können Teilnehmer und Produzenten zusammen Landbau- und Ernährungskultur gestalten und gemeinsam Verantwortung für ihre Lebensmittel und Umwelt übernehmen.</p>
             <p>CSA bedeutet auch, dass die Teilnehmer erleben können, wie ihre Ernährungsentscheidung die Kulturlandschaft gestaltet und Artenvielfalt ermöglicht.</p>
         </div>
 
@@ -33,10 +37,9 @@ andere CSA-Höfe
             CSA ist ein Modell der Zusammenarbeit zwischen Erzeugern und Verbrauchern.
         </p>
 
-        <h2 class="uk-margin-large-top uk-text-center">Vorteile</h2>
-        <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
             <div class="uk-width-medium-1-2">
-                <h3>Für Verbraucher</h3>
+                <h3>Vorteile für Verbraucher</h3>
                 <ul>
                     <li>jede Woche frische, gesunde Lebensmittel ohne Gentechnik</li>
                     <li>wissen wo, wie und von wem diese erzeugt werden</li>
@@ -49,7 +52,7 @@ andere CSA-Höfe
                 </ul>
             </div>
             <div class="uk-width-medium-1-2">
-                <h3>Für Erzeuger, Region und Umwelt</h3>
+                <h3>Vorteile für Erzeuger, Region und Umwelt</h3>
                 <ul>
                     <li>direkte Abgabe der Waren ohne lange Vermarktungskette</li>
                     <li>keine Überproduktion für den Müll</li>
