@@ -23,8 +23,16 @@ class HomepageController extends Controller
     public function pageAction($page)
     {
         $templating = $this->get('templating');
+        $page = trim($page, '/');
 
+        // look for explicit file
         $template = 'homepage/' . $page . '.html.twig';
+        if ($templating->exists($template)) {
+            return $this->render($template);
+        }
+
+        // look for directory index
+        $template = 'homepage/' . $page . '/index.html.twig';
         if ($templating->exists($template)) {
             return $this->render($template);
         }
