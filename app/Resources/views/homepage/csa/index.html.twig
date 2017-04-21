@@ -105,21 +105,3 @@ andere CSA-Höfe
 
     {% include 'homepage/footer.html.twig' %}
 {% endblock %}
-
-{% block stylesheets %}
-    {{ parent() }}
-    {% stylesheets
-    'assets/vendor/uikit/css/components/accordion.min.css'
-    filter='cssrewrite' %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    {% javascripts
-    'assets/vendor/uikit/js/components/accordion.min.js'
-    %}
-    <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
-{% endblock %}
