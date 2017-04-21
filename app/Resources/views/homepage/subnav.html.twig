@@ -1,32 +1,67 @@
-<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-top">
-    <li{% if page == 'arbeitsbereiche' %} class="uk-active"{% endif %}>
-        <a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}">
-            Arbeitsbereiche
-        </a>
-    </li>
-    <li{% if page == 'geschichte' %} class="uk-active"{% endif %}>
-        <a href="{{ path('page', {'page': 'geschichte'}) }}">
-            Geschichte
-        </a>
-    </li>
-    <li{% if page == 'betriebsspiegel' %} class="uk-active"{% endif %}>
-        <a href="{{ path('page', {'page': 'betriebsspiegel'}) }}">
-            Betriebsspiegel
-        </a>
-    </li>
-    <li>
-        <a href="">
-            Biodynamisch & Solidarisch
-        </a>
-    </li>
-    <li{% if page == 'tiere' %} class="uk-active"{% endif %}>
-        <a href="{{ path('page', {'page': 'tiere'}) }}">
-            Die Tiere
-        </a>
-    </li>
-    <li{% if page == 'menschen-vom-hof' %} class="uk-active"{% endif %}>
-        <a href="{{ path('page', {'page': 'menschen-vom-hof'}) }}">
-            Menschen vom Hof
-        </a>
-    </li>
-</ul>
+<nav id="subnav" class="uk-navbar uk-flex uk-flex-center" data-uk-sticky="{top:81}">
+    <ul class="uk-navbar-nav">
+        <li{% if page == 'arbeitsbereiche' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}">
+                Arbeitsbereiche
+            </a>
+        </li>
+        <li{% if page == 'geschichte' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'geschichte'}) }}">
+                Geschichte
+            </a>
+        </li>
+        <li{% if page == 'betriebsspiegel' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'betriebsspiegel'}) }}">
+                Betriebsspiegel
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Biodynamisch & Solidarisch
+            </a>
+        </li>
+        <li{% if page == 'tiere' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'tiere'}) }}">
+                Die Tiere
+            </a>
+        </li>
+        <li{% if page == 'menschen-vom-hof' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'menschen-vom-hof'}) }}">
+                Menschen vom Hof
+            </a>
+        </li>
+    </ul>
+</nav>
+
+{#<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-top">#}
+    {#<li{% if page == 'arbeitsbereiche' %} class="uk-active"{% endif %}>#}
+        {#<a href="{{ path('page', {'page': 'arbeitsbereiche'}) }}">#}
+            {#Arbeitsbereiche#}
+        {#</a>#}
+    {#</li>#}
+    {#<li{% if page == 'geschichte' %} class="uk-active"{% endif %}>#}
+        {#<a href="{{ path('page', {'page': 'geschichte'}) }}">#}
+            {#Geschichte#}
+        {#</a>#}
+    {#</li>#}
+    {#<li{% if page == 'betriebsspiegel' %} class="uk-active"{% endif %}>#}
+        {#<a href="{{ path('page', {'page': 'betriebsspiegel'}) }}">#}
+            {#Betriebsspiegel#}
+        {#</a>#}
+    {#</li>#}
+    {#<li>#}
+        {#<a href="">#}
+            {#Biodynamisch & Solidarisch#}
+        {#</a>#}
+    {#</li>#}
+    {#<li{% if page == 'tiere' %} class="uk-active"{% endif %}>#}
+        {#<a href="{{ path('page', {'page': 'tiere'}) }}">#}
+            {#Die Tiere#}
+        {#</a>#}
+    {#</li>#}
+    {#<li{% if page == 'menschen-vom-hof' %} class="uk-active"{% endif %}>#}
+        {#<a href="{{ path('page', {'page': 'menschen-vom-hof'}) }}">#}
+            {#Menschen vom Hof#}
+        {#</a>#}
+    {#</li>#}
+{#</ul>#}
