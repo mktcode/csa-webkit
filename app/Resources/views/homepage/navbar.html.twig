@@ -6,12 +6,12 @@
             </a>
             <div class="uk-dropdown uk-dropdown-small uk-dropdown-navbar">
                 <ul class="uk-nav">
-                    <li>
+                    <li{% if page == 'homepage' or page starts with 'der-hof' %} class="uk-active"{% endif %}>
                         <a href="{{ path('homepage') }}">
                             Hof Pente
                         </a>
                     </li>
-                    <li>
+                    <li{% if page starts with 'csa' %} class="uk-active"{% endif %}>
                         <a href="{{ path('page', {'page': 'csa'}) }}">
                             CSA
                         </a>
@@ -41,12 +41,12 @@
         </li>
     </ul>
     <ul class="uk-navbar-nav uk-hidden-small">
-        <li class="uk-active">
+        <li{% if page == 'homepage' or page starts with 'der-hof' %} class="uk-active"{% endif %}>
             <a href="{{ path('homepage') }}">
                 Hof Pente
             </a>
         </li>
-        <li>
+        <li{% if page starts with 'csa' %} class="uk-active"{% endif %}>
             <a href="{{ path('page', {'page': 'csa'}) }}">
                 CSA
             </a>
