@@ -1,0 +1,186 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/arbeitsbereiche.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted" data-uk-sticky="{top:50}">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>CSA</span></li>
+    </ul>
+
+    {% include 'homepage/csa/subnav.html.twig' %}
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center">Mitglied werden</h1>
+
+        <h2 class="uk-text-center uk-margin-large-top">Wir können noch <b>25</b> Mitglieder aufnehmen!</h2>
+
+        <p>
+            Du hast Interesse an Gemeinschaftsgetragener Landwirtschaft und überlegst Mitglied zu werden? Wir nehmen jetzt wieder neue Mitglieder auf! Es ist also noch Platz für dich! Nimm Kontakt zu uns auf oder fülle einfach direkt das untenstehende Formular für eine unverbindliche <a href="#mitgliedschaftsanfrage" data-uk-smooth-scroll="{offset: 140}">Mitgliedschaftsanfrage</a> aus. Und falls du dir noch unsicher bist, haben wir dir hier nochmal die häufigsten Fragen zur Mitgliedschaft und unsere Antworten dazu aufgeführt.
+        </p>
+
+        <h2 class="uk-margin-large-top uk-text-center">Häufige Fragen zur Mitgliedschaft</h2>
+        <div class="uk-accordion" data-uk-accordion="{showfirst: false}">
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Was kostet die Mitgliedschaft?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Gibt es Bedingungen für eine Mitgliedschaft?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Wie viele Lebensmittel kann ich pro Woche bekommen?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Wie komme ich an die Lebensmittel?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Gibt es einen Mindestzeitraum für den ich mich verpflichten muss?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+            <h3 class="uk-accordion-title">
+                <i class="uk-icon-angle-down"></i>
+                Gibt es Pflichtveranstaltungen an denen ich teilnehmen muss?
+            </h3>
+            <div class="uk-accordion-content">
+                <p>Rerum blanditiis doloremque dolor fuga quaerat non molestias ad. Aperiam eum veritatis commodi totam. Ea voluptatem veniam voluptas dolor. Velit quo eveniet consectetur et.</p>
+                <p>Pariatur provident ad aut quam voluptatibus earum in. Quod velit neque repellendus. Tempore eos ab praesentium molestias.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="uk-margin-large-top">
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h2 class="uk-text-center" id="mitgliedschaftsanfrage">Mitgliedschaftsanfrage</h2>
+
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-2 uk-text-center-small uk-text-right uk-text-large">
+                <b>CSA Hof Pente GbR</b><br>
+                Osnabrücker Str. 73<br>
+                49565 Bramsche
+            </div>
+            <div class="uk-width-medium-1-2 uk-text-center-small uk-text-large">
+                Tel.: 05407 8984517<br>
+                Fax.: 05407 8984518<br>
+                <a href="mailto:buero@hofpente.de">csa@hofpente.de</a>
+            </div>
+            <div class="uk-width-medium-1-1">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-margin-large-top grey section">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-divider" data-uk-grid-margin>
+                <div class="uk-width-medium-2-3">
+                    <form action="" method="post" class="uk-form uk-form-stacked">
+                        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-firstname">Vorname</label>
+                                    <div class="uk-form-controls">
+                                        <input type="text" id="form-firstname" placeholder="Vorname" class="uk-form-large uk-width-1-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-lastname">Nachname</label>
+                                    <div class="uk-form-controls">
+                                        <input type="text" id="form-lastname" placeholder="Nachname" class="uk-form-large uk-width-1-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-email">E-Mail</label>
+                                    <div class="uk-form-controls">
+                                        <input type="text" id="form-email" placeholder="E-Mail" class="uk-form-large uk-width-1-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-phone">Telefon</label>
+                                    <div class="uk-form-controls">
+                                        <input type="text" id="form-phone" placeholder="Telefon" class="uk-form-large uk-width-1-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-topic">Anzahl Erwachsene</label>
+                                    <div class="uk-form-controls">
+                                        <input type="number" id="form-persons" placeholder="Anzahl Personen" class="uk-form-large uk-width-1-1" min="0" max="10">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-topic">Anzahl Kinder</label>
+                                    <div class="uk-form-controls">
+                                        <input type="number" id="form-children" placeholder="Anzahl Kinder" class="uk-form-large uk-width-1-1" min="0" max="10">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-1">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="form-message">Nachricht</label>
+                                    <div class="uk-form-controls">
+                                        <textarea id="form-message" rows="5" placeholder="Nachricht" class="uk-form-large uk-width-1-1"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-1 uk-text-center">
+                                <button class="uk-button uk-button-large uk-button-success">
+                                    Anfrage senden
+                                    <i class="uk-icon-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-width-medium-1-3 uk-text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131096.73374923566!2d7.884366025030807!3d52.37122221495227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9e11447a4c789%3A0x2ea9ece22abd4540!2sCSA+Hof+Pente+-+Solidarische+Landwirtschaft+-+Handlungsp%C3%A4dagogische+Provinz!5e0!3m2!1sde!2sde!4v1491624957441"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}

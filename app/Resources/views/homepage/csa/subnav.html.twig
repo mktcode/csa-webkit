@@ -1,7 +1,7 @@
 <nav id="subnav" class="uk-navbar uk-flex uk-flex-center" data-uk-sticky="{top:81}">
     <ul class="uk-navbar-nav">
-        <li>
-            <a href="">
+        <li{% if page == 'csa/mitglied-werden' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'csa/mitglied-werden'}) }}">
                 Mitglied werden
             </a>
         </li>
