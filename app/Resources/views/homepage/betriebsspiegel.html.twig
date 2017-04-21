@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/default.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted" data-uk-sticky="{top:50}">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>Betriebsspiegel</span></li>
+    </ul>
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center">Betriebsspiegel</h1>
+
+        {% include 'homepage/subnav.html.twig' %}
+
+        <div class="uk-clearfix uk-column-medium-1-2 uk-margin-large-top">
+            <ul>
+                <li>seit 1988 Bioland-Betrieb</li>
+                <li>seit 2008 Demeter-Zertifiziert</li>
+                <li>56 ha Gesamtfläche</li>
+                <li>3 ha Gartenbau</li>
+                <li>3 Gewächshäuser (1.000 qm)</li>
+                <li>35 ha Ackerbau</li>
+                <li>5 ha Weide/Streuobstwiesen</li>
+                <li>10 ha Waldbau</li>
+                <li>Bienenhaltung</li>
+                <li>Mutterkuhhaltung (Fleischrinder)</li>
+                <li>Schafe</li>
+                <li>50 Schweine</li>
+                <li>260 Hühner</li>
+            </ul>
+            <p>In unserem Hofgemeinschaftsprojekt sind neben den drei Hoffamilien samt Kindern noch zwei Gesellen, eine Hilfskraft, drei Lehrlinge (Gartenbau & Landwirtschaft), Erzieherinnen und Tagesmütter & eine Auszubildende Erzieherin (in der Bauernhof KiTa), Praktikanten und freiwillige CSA Mitglieder tätig.</p>
+        </div>
+
+        <h3>Zertifizierung</h3>
+        <div class="uk-clearfix">
+            <img src="{{ asset('assets/img/demeter-badge.png') }}" alt="" class="uk-align-medium-left"/>
+            <p>Die Hof Pente GbR ist Mitglied bei Demeter. Das bedeutet, das wir pro Jahr zwei Betriebskontrollen durchlaufen. Wer mehr über die Erzeugungsrichtlinien für die Anerkennung der Demeter-Qualität wissen will, kann auf der Seite des <a href="https://www.demeter.de/" target="_blank">Demeter e.V.</a> alles nachlesen.</p>
+        </div>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}

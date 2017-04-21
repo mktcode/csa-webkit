@@ -117,11 +117,24 @@
                             <div class="uk-panel-teaser">
                                 <img src="{{ asset('assets/img/teasers/geschichte.jpg') }}" alt="">
                             </div>
-                            <h3 class="uk-panel-title">Geschichte &amp; Betriebsspiegel</h3>
+                            <h3 class="uk-panel-title">Geschichte</h3>
                             Die Geschichte des Hofes geht auf eine lange Generationenreihe zurück. Ein eingemauerter
-                            Balken trägt
-                            die Jahreszahl 1565.
-                            <a href="{{ path('page', {'page': 'geschichte-und-betriebsspiegel'}) }}"
+                            Balken trägt die Jahreszahl 1565.
+                            <a href="{{ path('page', {'page': 'geschichte'}) }}"
+                               class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                                weiter lesen
+                                <i class="uk-icon-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-teaser">
+                                <img src="{{ asset('assets/img/teasers/ackerbau.jpg') }}" alt="">
+                            </div>
+                            <h3 class="uk-panel-title">Betriebsspiegel</h3>
+                            Seit 1988 Bioland-Betrieb, seit 2008 Demeter-Zertifiziert und 56 ha Gesamtfläche - Alle Zahlen auf einen Blick.
+                            <a href="{{ path('page', {'page': 'betriebsspiegel'}) }}"
                                class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
                                 weiter lesen
                                 <i class="uk-icon-angle-double-right"></i>
@@ -166,7 +179,7 @@
                             <h3 class="uk-panel-title">Menschen vom Hof</h3>
                             Auf dem Hof leben 20 Menschen. An unserem Gemeinschaftsprojekt sind aber natürlich weitaus
                             mehr Menschen beteiligt.
-                            <a href="" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
+                            <a href="{{ path('page', {'page': 'menschen-vom-hof'}) }}" class="uk-button uk-button-success uk-width-1-1 uk-margin-top">
                                 weiter lesen
                                 <i class="uk-icon-angle-double-right"></i>
                             </a>

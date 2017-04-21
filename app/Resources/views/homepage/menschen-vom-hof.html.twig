@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/menschen.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted" data-uk-sticky="{top:50}">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>Menschen vom Hof</span></li>
+    </ul>
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center">Menschen vom Hof</h1>
+
+        {% include 'homepage/subnav.html.twig' %}
+
+        <div class="uk-clearfix uk-column-medium-1-2 uk-margin-large-top">
+            <p>An unserem Hofgemeinschaftsprojekt sind viele Menschen beteiligt. Nicht alle wohnen hier auch auf dem Hof, aber alle hier aufgeführten kommen in der Regel mindestens wöchentlich vorbei. Außerdem gibt es noch  viele tatkräftige Mitglieder und Praktikanten.</p>
+        </div>
+
+        <div class="uk-grid uk-grid-small uk-margin-large-top" data-uk-grid-margin>
+            <div class="uk-width-large-1-5 uk-width-medium-1-4 uk-width-small-1-2 uk-text-center">
+                <a class="uk-thumbnail" href="#menschen-tobias-hartkemyer" data-uk-modal>
+                    <img src="{{ asset('assets/img/menschen/tobias-hartkemeyer.png') }}" alt="">
+                    <div class="uk-thumbnail-caption">Tobias Hartkemeyer</div>
+                </a>
+            </div>
+            <div class="uk-width-large-1-5 uk-width-medium-1-4 uk-width-small-1-2 uk-text-center">
+                <a class="uk-thumbnail" href="#menschen-julia-hartkemyer" data-uk-modal>
+                    <img src="{{ asset('assets/img/menschen/julia-hartkemeyer.png') }}" alt="">
+                    <div class="uk-thumbnail-caption">Julia Hartkemeyer</div>
+                </a>
+            </div>
+            <div class="uk-width-large-1-5 uk-width-medium-1-4 uk-width-small-1-2 uk-text-center">
+                <a class="uk-thumbnail" href="#menschen-johannes-hartkemyer" data-uk-modal>
+                    <img src="{{ asset('assets/img/menschen/johannes-hartkemeyer.png') }}" alt="">
+                    <div class="uk-thumbnail-caption">Johannes Hartkemeyer</div>
+                </a>
+            </div>
+            <div class="uk-width-large-1-5 uk-width-medium-1-4 uk-width-small-1-2 uk-text-center">
+                <a class="uk-thumbnail" href="#menschen-martina-hartkemyer" data-uk-modal>
+                    <img src="{{ asset('assets/img/menschen/martina-hartkemeyer.png') }}" alt="">
+                    <div class="uk-thumbnail-caption">Martina Hartkemeyer</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="menschen-tobias-hartkemyer" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="uk-modal-header">
+                <h3>Tobias Hartkemeyer</h3>
+            </div>
+            <p>
+                <img src="{{ asset('assets/img/menschen/tobias-hartkemeyer.png') }}" alt="" class="uk-align-medium-left"/>
+                Tobias Hartkemeyer ist Landwirt, Lehrer, Aktionsforscher, Diplom-Ingenieur, Doktor der Agrarwissenschaften und Mitbegründer des CSA Hofs Pente und der Arbeitsgemeinschaft Handlungspädagogik.
+            </p>
+            <p>Er hat in Deutschland, Spanien, England und Mexiko studiert: Agrar- und Erziehungswissenschaften, Staatsexamen SEC II, Biologie/Geographie/Philosophie, Holistic Science, Waldorflehrerstudium, Landbauschule Dottenfelder Hof, Eurythmie Basis Ausbildung</p>
+            <p>Von 2004 - 2010 war Tobias wissenschaftlicher Mitarbeiter der Uni Kassel in den Fachbereichen Psychologie, Ernährungskultur und Agrartechnik. Er ist außerdem Ausbilder für Landwirtschaft, ehem. Seminarleiter der Freien Ausbildung, Vorsitzender der Adolf-Reichwein-Gesellschaft e.V., Vorstandsmitglied des European Network for Dialogue Facilitation, Expert Fellow an der Akademie für Potentialentfaltung, Autor und Ausbilder für Dialogprozessbegleitung.</p>
+            <p>Tobias ist verheiratet und hat vier Kinder.</p>
+        </div>
+    </div>
+
+    <div id="menschen-julia-hartkemyer" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="uk-modal-header">
+                <h3>Julia Hartkemeyer</h3>
+            </div>
+            <p class="uk-clearfix">
+                <img src="{{ asset('assets/img/menschen/julia-hartkemeyer.png') }}" alt="" class="uk-align-medium-left"/>
+                Julia Hartkemeyer ist Gärtnerin und Agaraingenieurin. Sie ist hauptsächlich mit der Planung und Organisation und dem Mitgliederkontakt des Gemeinschaftshofes beschäftigt. Sie besucht gerade das Waldorflehrer Seminar.
+            </p>
+            <p>Julia ist verheiratet und hat vier Kinder.</p>
+        </div>
+    </div>
+
+    <div id="menschen-johannes-hartkemyer" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="uk-modal-header">
+                <h3>Johannes F. Hartkemeyer</h3>
+            </div>
+            <p class="uk-clearfix">
+                <img src="{{ asset('assets/img/menschen/johannes-hartkemeyer.png') }}" alt="" class="uk-align-medium-left"/>
+                Johannes F. Hartkemeyer ist Diplomingenieur, Diplompädagoge, Landwirt, Ausbilder, Dr. rer pol., Grund- und Hauptschullehrer (1. Staatsexamen) und Autor.<br><br>Seit 1975 ist er in der Erwachsenenbildung tätig und war bis 2009 Direktor der Volkshochschule der Stadt Osnabrück und ist langjähriger Lehrbeauftragter für Bildungssoziologie und Lernkultur an der Universität Osnabrück. Außerdem ist er Mitbegründer und langjähriger Vorstand des Niedersächsischen Instituts für frühkindliche Bildung und Entwicklung (NIFBE). Er ist Träger des Bundesverdienstkreuzes „für sein soziales, ökologisches und bildungspolitisches Engagement“.<br><br>Johannes hat vier Kinder und zehn Enkelkinder.
+            </p>
+        </div>
+    </div>
+
+    <div id="menschen-martina-hartkemyer" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="uk-modal-header">
+                <h3>Martina Hartkemeyer</h3>
+            </div>
+            <p class="uk-clearfix">
+                <img src="{{ asset('assets/img/menschen/martina-hartkemeyer.png') }}" alt="" class="uk-align-medium-left"/>
+                Martina Hartkemeyer ist Dipl. Biologin, Dr. rer. pol., ehem. Berufsschullehrerin am Berufskolleg Mettingen, Leiterin des Deutschen Instituts für Dialogprozess-Begleitung der Adolf-Reichwein-Gesellschaft in Bramsche. Sie leitet nationale und internationale Seminare in deutscher und englischer Sprache, ist Ausbilderin für Dialogprozess-Begleitung, hält Vorträge, Lehraufträge und Workshops für verschiedene Institutionen und Universitäten.<br><br>Martina hat vier Kinder und zehn Enkelkinder.
+            </p>
+        </div>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}
