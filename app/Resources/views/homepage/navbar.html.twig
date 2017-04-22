@@ -6,12 +6,12 @@
             </a>
             <div class="uk-dropdown uk-dropdown-small uk-dropdown-navbar">
                 <ul class="uk-nav">
-                    <li{% if page == 'homepage' or page starts with 'der-hof' %} class="uk-active"{% endif %}>
+                    <li{% if page is defined and (page == 'homepage' or page starts with 'der-hof') %} class="uk-active"{% endif %}>
                         <a href="{{ path('homepage') }}">
                             Hof Pente
                         </a>
                     </li>
-                    <li{% if page starts with 'csa' %} class="uk-active"{% endif %}>
+                    <li{% if page is defined and page starts with 'csa' %} class="uk-active"{% endif %}>
                         <a href="{{ path('page', {'page': 'csa'}) }}">
                             CSA
                         </a>
@@ -21,9 +21,14 @@
                             Bildung
                         </a>
                     </li>
+                    <li{% if page is defined and page starts with 'medien' %} class="uk-active"{% endif %}>
+                        <a href="{{ path('page', {'page': 'medien/bilder'}) }}">
+                            Medien
+                        </a>
+                    </li>
                     <li>
-                        <a href="//blog.hofpente.local">
-                            Blog &amp; Medien
+                        <a href="">
+                            Aktuelles
                         </a>
                     </li>
                     <li>
@@ -41,12 +46,12 @@
         </li>
     </ul>
     <ul class="uk-navbar-nav uk-hidden-small">
-        <li{% if page == 'homepage' or page starts with 'der-hof' %} class="uk-active"{% endif %}>
+        <li{% if page is defined and (page == 'homepage' or page starts with 'der-hof') %} class="uk-active"{% endif %}>
             <a href="{{ path('homepage') }}">
                 Hof Pente
             </a>
         </li>
-        <li{% if page starts with 'csa' %} class="uk-active"{% endif %}>
+        <li{% if page is defined and page starts with 'csa' %} class="uk-active"{% endif %}>
             <a href="{{ path('page', {'page': 'csa'}) }}">
                 CSA
             </a>
@@ -56,9 +61,14 @@
                 Bildung
             </a>
         </li>
+        <li{% if page is defined and page starts with 'medien' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'medien/bilder'}) }}">
+                Medien
+            </a>
+        </li>
         <li>
-            <a href="//blog.hofpente.local">
-                Blog &amp; Medien
+            <a href="">
+                Aktuelles
             </a>
         </li>
         <li>
