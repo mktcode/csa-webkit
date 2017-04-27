@@ -4,7 +4,8 @@
     "mktcode <kontakt@markus-kottlaender.de>"
   ],
   "dependencies": {
-    "uikit": "^2.27.2",
+//    "uikit": "^2.27.2",
+    "uikit": "https://github.com/uikit/bower-uikit.git#^2.27.2",
     "vide": "^0.5.1"
   }
 }
