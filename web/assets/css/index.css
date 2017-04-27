@@ -27,7 +27,10 @@ a {
   height: 100%; }
 
 .uk-button {
-  border-radius: 4px; }
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px; }
 
 .uk-form input,
 .uk-form select,
@@ -76,12 +79,16 @@ a {
     background: #8ec73b;
     color: #fff;
     opacity: 1;
-    margin: -20px -20px 0 0;
+    margin: -25px -25px 0 0;
     border-bottom-left-radius: 4px;
     border-top-right-radius: 4px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
     padding: 5px; }
     .uk-modal-dialog > .uk-close:first-child:hover {
       opacity: 1; }
+  .uk-modal-dialog.uk-modal-dialog-lightbox > .uk-close:first-child {
+    margin: 0; }
 
 .uk-thumbnail {
   border-radius: 4px; }
