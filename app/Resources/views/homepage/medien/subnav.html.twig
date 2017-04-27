@@ -1,0 +1,24 @@
+<nav id="subnav" class="uk-navbar uk-flex uk-flex-center" data-uk-sticky="{top:81}">
+    <ul class="uk-navbar-nav">
+        <li{% if page == 'medien/bilder' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'medien/bilder'}) }}">
+                Bilder
+            </a>
+        </li>
+        <li{% if page == 'medien/videos' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'medien/videos'}) }}">
+                Videos
+            </a>
+        </li>
+        <li{% if page == 'medien/buecher' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'medien/buecher'}) }}">
+                Bücher
+            </a>
+        </li>
+        <li{% if page == 'medien/presse' %} class="uk-active"{% endif %}>
+            <a href="{{ path('page', {'page': 'medien/presse'}) }}">
+                Presse
+            </a>
+        </li>
+    </ul>
+</nav>

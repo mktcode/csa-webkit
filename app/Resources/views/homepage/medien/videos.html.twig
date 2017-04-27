@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'homepage/navbar.html.twig' %}
+
+    <div id="header" class="uk-cover-background small" style="background-image: url('/assets/img/headers/csa.jpg');"></div>
+
+    <ul class="uk-breadcrumb uk-text-center uk-text-muted" data-uk-sticky="{top:50}">
+        <li><a href="{{ path('homepage') }}"><i class="uk-icon-home"></i></a></li>
+        <li class="uk-active"><span>CSA</span></li>
+    </ul>
+
+    {% include 'homepage/medien/subnav.html.twig' %}
+
+    <div class="uk-container uk-container-center uk-margin-large-top">
+        <h1 class="uk-text-center uk-margin-bottom-remove">Medien</h1>
+        <h2 class="uk-text-center uk-margin-top-remove uk-text-muted">Videos</h2>
+
+        <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
+            <div class="uk-width-small-1-2 uk-text-center">
+                <div class="uk-thumbnail uk-display-block">
+                    <div class="responsive-video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/P5vgTbmY8cA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="uk-thumbnail-caption">Alternative Formen der Landwirtschaft | Werkstatt Zukunft</div>
+                </div>
+            </div>
+            <div class="uk-width-small-1-2 uk-text-center">
+                <div class="uk-thumbnail uk-display-block">
+                    <div class="responsive-video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/eQEPFredAdw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="uk-thumbnail-caption">Prof. Dr. Gerald Hüther auf Hof Pente</div>
+                </div>
+            </div>
+            <div class="uk-width-small-1-2 uk-text-center">
+                <div class="uk-thumbnail uk-display-block">
+                    <div class="responsive-video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/5rQNN6dAhBI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="uk-thumbnail-caption">Hof Pente - Solidarische Landwirtschaft</div>
+                </div>
+            </div>
+            <div class="uk-width-small-1-2 uk-text-center">
+                <div class="uk-thumbnail uk-display-block">
+                    <div class="responsive-video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/PDtbUPPPuX0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="uk-thumbnail-caption">Hüther weist auf Hof Pente als Modellprojekt</div>
+                </div>
+            </div>
+            <div class="uk-width-small-1-2 uk-text-center">
+                <div class="uk-thumbnail uk-display-block">
+                    <div class="responsive-video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/MkNHxvfRyNE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="uk-thumbnail-caption">Tobias Hartkemeyer beim West Art Talk</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'homepage/footer.html.twig' %}
+{% endblock %}
