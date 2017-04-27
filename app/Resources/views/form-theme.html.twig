@@ -26,7 +26,8 @@
 {%- block form_errors -%}
     {%- if errors|length > 0 -%}
         {%- for error in errors -%}
-            <div class="uk-alert uk-alert-danger">
+            <div class="uk-alert uk-alert-danger" data-uk-alert>
+                <a href="" class="uk-alert-close uk-close"></a>
                 {{ error.message }}
             </div>
         {%- endfor -%}
